@@ -3,6 +3,18 @@
 ## FNDHL
 Fake news detection in the Hindi language is an NLP based model developed for the detection of whether a Hindi news headline is fake or real.
 
+## Web Portal:
+<p align="center">
+  Presently available at local host
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123117753-a75fff00-d45f-11eb-8566-d5a3fd515d6b.png" />
+</p>
+
+### How to use?
+1. Copy Hindi news article from any source.
+2. Paste the Hindi news article in the box as shown above.
+3. Click on predict to check whether the Hindi news is true or fake. 
 
 
 ## Table of Contents: 
@@ -13,9 +25,10 @@ Fake news detection in the Hindi language is an NLP based model developed for th
 5. Generic Methodology
 6. Comparison of Results
 7. Summary and Conclusion
-8. Future Scope
-9. References
-10. Credits
+8. Limitations
+9. Future Scope
+10. References
+11. Credits
 
 ## 1. Motivation
 - Everyone deserve to know the truth. 
@@ -54,11 +67,11 @@ Fake news tackled with facts!
 </p>
 
 - The following figure shows dataset description as follows:
-  - 'id' representing unique numberical value
-  - 'title' representing hindi news headline in newspaper
-  - 'text' representing body text under the hindi news article
-  - 'author' representing the author/writer of that news article
-  - 'label' indicating numeric value '0' for fake news and '1' for true news
+  - 'id' representing unique numberical value.
+  - 'title' representing hindi news headline in newspaper.
+  - 'text' representing body text under the hindi news article.
+  - 'author' representing the author/writer of that news article.
+  - 'label' indicating numeric value '0' for fake news and '1' for true news.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123100032-5eed1500-d450-11eb-9191-dab860481c7e.png" />
@@ -78,6 +91,49 @@ Fake news tackled with facts!
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123104184-5d255080-d454-11eb-948d-11dc323a1714.png" />
 </p>
+
+- The following table represents comparison of result after evaluating with different machine learning and deep learning algorithms.
+- It can be noted that B-LSTM (Bidirectional Long Short Term Memory) algorithm as compared with other algorithms gave the best results with an accuracy of 95.01% and precision of 90%.
+
+### Architecture used in our model
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123116562-a37fad00-d45e-11eb-9b8e-db4e85dfb1d7.png" />
+</p>
+<p align="center">
+  Bidirectional LSTM Architecture retrieved from https://paperswithcode.com/method/bilstm
+</p>
+
+- It is a two way process.
+- A Bidirectional LSTM is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. 
+### Example of B-LSTM:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/47279598/123117182-299bf380-d45f-11eb-8ee4-b278f5c8d8b8.png" />
+</p>
+
+- The LSTM model reads the input text in one direction from left to right.
+- The B-LSTM model reads the input text from both directions from left to right and right to left.
+
+## 7. Summary and Conclusion
+- Automatic fake news detection is a very promising area of research.
+- Due to drastic consequences detection of fake news becomes very significant. 
+- The Hindi dataset created can be a contribution to other research work. 
+- The project proposes a model that can easily absorb other features of news and has a very strong extensibility. 
+- B-LSTM was preferred since higher accuracies were achieved of about 95.01%.
+
+
+## 8. Limitations/ Challenges faced during the project
+- Lack of labelled data availability in Indian regional languages.
+- The amount of data on social media is massive but unlabeled and hence could not be used for training.
+- Also preprocessing of Hindi data was a challenge.
+- Due to above limitations remaining available dataset will lead to underfitting of the model.
+
+## 9. Future Scope
+- To increase the size of Hindi dataset and make it more robust.
+- Testing the model using URL to validate headlines and other parameters.
+- To make system adaptive to other languages and detect region specific biases.
+- To investigate new features to flag fake news.
+
+
 
 
 ## Installation: 
