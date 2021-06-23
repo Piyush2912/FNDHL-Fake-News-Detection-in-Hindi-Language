@@ -1,6 +1,6 @@
 # FNDHL-Fake-News-Detection-in-Hindi-Language
 
-## FNDHL
+## FNDHL 
 Fake news detection in the Hindi language is an NLP based model developed for the detection of whether a Hindi news headline is fake or real.
 
 ## Web Portal:
@@ -21,14 +21,15 @@ Fake news detection in the Hindi language is an NLP based model developed for th
 1. Motivation
 2. Problem Statement
 3. Introduction
-4. Hindi Dataset Creation
-5. Generic Methodology
-6. Comparison of Results
-7. Summary and Conclusion
-8. Limitations
-9. Future Scope
-10. References
+4. Requirements
+5. Hindi Dataset Creation
+6. Generic Methodology
+7. Comparison of Results
+8. Summary and Conclusion
+9. Limitations
+10. Future Scope
 11. Credits
+12. License
 
 ## 1. Motivation
 - Everyone deserve to know the truth. 
@@ -53,7 +54,23 @@ Fake news tackled with facts!
 - Lots of fake and manipulative news are posing a huge risk in regional languages.
 - An analysis of Hindi fake news on a manually created dataset using various Machine learning -classification algorithms as well as using Deep learning.
 
-## 4. Hindi Dataset Creation
+## 4. Requirements
+- Jupyter Notebook version 6.1 or above
+- Python version 3.7 or above
+- Hindi stopwords
+- Kruti Dev font
+- MS Excel
+- Python Libraries Used:
+  - numpy https://numpy.org/doc/
+  - pandas https://pandas.pydata.org/docs/
+  - scikit-learn https://scikit-learn.org/stable/user_guide.html
+  - matplotlib https://matplotlib.org/stable/users/index.html
+  - re https://docs.python.org/3/library/re.html
+  - nltk https://www.nltk.org/api/nltk.html
+  - PorterStemmer https://tartarus.org/martin/PorterStemmer/
+  - seaborn https://seaborn.pydata.org/tutorial.html
+
+## 5. Hindi Dataset Creation
 ### Sources of Hindi Dataset Creation
 1. Danik Bhaskar      www.bhaskar.com/
 2. Hindustan Times    www.hindustantimes.com/
@@ -80,14 +97,14 @@ Fake news tackled with facts!
 - There is equal distribution of dataset.
 - The following figure shows the bar graph which represents a total of 24,000 news articles distribution between two classes, fake news and real news.
 
-## 5. Generic Methodology
+## 6. Generic Methodology
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123103198-682bb100-d453-11eb-902e-1916932993e8.png" />
 </p>
 
 - The following figure represents sequential steps performed in order to reach to end goal.
 
-## 6. Comparison of Results
+## 7. Comparison of Results
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47279598/123104184-5d255080-d454-11eb-948d-11dc323a1714.png" />
 </p>
@@ -107,13 +124,13 @@ Fake news tackled with facts!
 - A Bidirectional LSTM is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. 
 ### Example of B-LSTM:
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47279598/123117182-299bf380-d45f-11eb-8ee4-b278f5c8d8b8.png" />
+  <img src="https://user-images.githubusercontent.com/47279598/123117182-299bf380-d45f-11eb-8ee4-b278f5c8d8b8.png" width="800" height="400" />
 </p>
 
 - The LSTM model reads the input text in one direction from left to right.
 - The B-LSTM model reads the input text from both directions from left to right and right to left.
 
-## 7. Summary and Conclusion
+## 8. Summary and Conclusion
 - Automatic fake news detection is a very promising area of research.
 - Due to drastic consequences detection of fake news becomes very significant. 
 - The Hindi dataset created can be a contribution to other research work. 
@@ -121,32 +138,30 @@ Fake news tackled with facts!
 - B-LSTM was preferred since higher accuracies were achieved of about 95.01%.
 
 
-## 8. Limitations/ Challenges faced during the project
+## 9. Limitations/ Challenges faced during the project
 - Lack of labelled data availability in Indian regional languages.
 - The amount of data on social media is massive but unlabeled and hence could not be used for training.
 - Also preprocessing of Hindi data was a challenge.
 - Due to above limitations remaining available dataset will lead to underfitting of the model.
 
-## 9. Future Scope
+## 10. Future Scope
 - To increase the size of Hindi dataset and make it more robust.
 - Testing the model using URL to validate headlines and other parameters.
 - To make system adaptive to other languages and detect region specific biases.
 - To investigate new features to flag fake news.
 
+## 11. Credits: 
+Thanking my project teammates for always inspiring and motivating me throughout the journey.
+<div class="align-text">
+  <p>
+    <p text-align= "justify"> Rohan Arora : https://www.linkedin.com/in/rohanarora18/  </p> 
+    <img src="https://user-images.githubusercontent.com/47279598/123132503-70441a80-d46c-11eb-9157-47d93081864d.png" align="justfy" width="250" height="250"/>
+    <p text-align= "justify"> Shreya Dhingra https://www.linkedin.com/in/shreya-dhingra-927b19190 </p>  
+    <img src="https://user-images.githubusercontent.com/47279598/123132674-9c5f9b80-d46c-11eb-9e0e-5c7d716fb811.png" align="justify" width="250" height="250"/>
+    <p text-align= "justify"> Adarsh Kumar https://www.linkedin.com/in/adarsh-kumar-5b1a1719b </p>  
+    <img src="https://user-images.githubusercontent.com/47279598/123133053-fc564200-d46c-11eb-8b87-cea10612aee1.png" align="justfy" width="250" height="250"/>
+  </p>
+</div>
 
-
-
-## Installation: 
-Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
-
-## Usage: 
-The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
-## Contributing: 
-Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
-
-## Credits: 
-Include a section for credits in order to highlight and link to the authors of your project.
-
-## License: 
-Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide! 
+## 12. License: 
+- Apache License 2.0
