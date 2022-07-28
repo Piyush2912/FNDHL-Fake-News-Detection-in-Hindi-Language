@@ -11,6 +11,8 @@ Fake news detection in the Hindi language is an NLP based model developed for th
   <img src="https://user-images.githubusercontent.com/47279598/123117753-a75fff00-d45f-11eb-8566-d5a3fd515d6b.png" />
 </p>
 
+### Link for Research Paper: https://www.emerald.com/insight/content/doi/10.1108/IJWIS-02-2022-0036/full/html?skipTracking=true
+
 ### How to use?
 1. Copy Hindi news article from any source.
 2. Paste the Hindi news article in the box as shown above.
